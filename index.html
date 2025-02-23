@@ -4,76 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CBT System</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="../gns101.html">GNS 101</a></li>
+            <li><a href=></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="firstlayer">
+            <h2> CYF LMS</h2>
+            <div class="flanimate"> <!-- Placeholder for animation or image --> </div>
+        </section>
 
-    <!-- Home Page -->
-    <section id="home-page" class="page">
-        <h1> CYF LMS (CBT) </h1>
-        <h2>Login</h2>
-        <form id="login-form">
-            <label>Matric No:</label>
-            <input type="text" id="matric-no" required>
+        <section id="introduction">
+            <h2>Chapel Youth Fellowship</h2>
+            <p>CYF is the youth arm of the Chapel of Faith Interdenominational Church, Federal University of Technology, Akure (FUTA). 
+                <br><br> The vision of CYF is to build a living fellowship where we all grow in the knowledge of our Lord and Savior Jesus Christ, academic excellence abounds, service to God is rendered in love and unity even as we 
+                reach out to the lost and the unsaved, restoring them to the father.
             
-            <label>Password:</label>
-            <input type="password" id="password" required>
-            
-            <button type="submit">Proceed</button>
-        </form>
+                Her mission is to raise well equipped followers of Christ through:
+                1. Preaching. (2 Timothy 4: 2)
+                2. Teaching. (Matthew 28: 19-20)
+                3. Bible Study. (2 Timothy 2:15, 2 Timothy 3 16-17)
+                4. Discipleship. (1 Corinthians 11:1, Acts 18: 24-28)
+                5. Evangelism. (Mark 16: 15-16)
+                6. Prayer meetings. (Matthew 18: 19-20, James 5:16b)
+                7. Academic Tutorials. (Proverbs 9: 9
+            </p>
+        </section>
 
-        <footer style="background: #ddd; color: black; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
-            <div class="footer-container">
-               <p>&copy; 2025 CBT System | All Rights Reserved </p>
-               
-               <p>Powered by <strong>Chapel Youth Fellowship</strong></p>
-           </div>
-       </footer>
-    </section>
+        <section id="resources">
+            <h3>These are the available courses below. Click to take test </h3>
+            <ul>
+                <li> <a href="../gns101.html"> <button class="cob"> GNS 101 </button> </a></li>
+                <li> <a href="../gns101.html"> <button class="cob"> MTS 101 </button> </a></li>
+                <li> <a href="../gns101.html"> <button class="cob"> PHY 101 </button> </a></li>
+            </ul>
+        </section>
+
+        <section id="subscription">
+            <p>More courses will be added. Ensure to check back later. Subscribe to be notified for new content</p>
+            <button class="subbutton" onclick="
+            const subElement = document.querySelector('.subbutton');
+            
+            if (subElement.innerText === 'Subscribe') {
+                subElement.innerHTML = 'Subscribed';
+            } else {
+                subElememt.innerHTML = 'Subscribe';
+                }">
+                Subscribe</button>
+        </section>
+
+
+        <div class="connect-section">
+            <h2>Connect With Us</h2>
+            <a href="https://instagram.com/cyf.futa" target="_blank">
+                <img src="icons/instagram (1).png" alt="Instagram" width="30"></a>
+            
+            <a href="https://youtube.com/@cyffuta" target="_blank">
+                    <img src="icons/youtube.png" alt="Facebook" width="30"></a>
     
+            <a href="https://facebook.com/futa.cyf" target="_blank">
+                <img src="icons/facebook.png" alt="Facebook" width="30"></a>
+    
+            <a href="https://open.spotify.com/show/7D2O3J4hbRuVsfjh1E8cd7?si=3fce1f355e5c4970" target="_blank">
+                <img src="icons/spotify.png" alt="Facebook" width="30"></a>
+            
+            
+            
+            <p><a href="" target="_blank">
+                <img src="icons/email.png" alt="Email" width="30" > cyf.futa@gmail.com</a></p>
+    
+            <h3>Get to Us</h3>
 
-    <!-- Instructions Page -->
-    <section id="instructions-page" class="page hidden">
-        <h2>Instructions</h2>
-        <p><strong>Matric No:</strong> <span id="user-matric"></span></p>
-        <p><strong>Course:</strong> GNS 101</p>
-        <p><strong>Duration:</strong> 10 minutes</p>
-        <p>This is a Computer-Based Test for GNS 101. The duration is 10 minutes to answer 30 questions.</p>
-        <button id="start-test">Start</button>
-    </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d126637.60564962261!2d5.051225762567424!3d7.30603742581461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x10478948911082f9%3A0x2bd483b3eb231a2a!2sOpposite%20Calvary%20Catholic%20Church%2C%20Niger%20Delta%20Rd%2C%20Ipinsa%20340110%2C%20Ondo!3m2!1d7.3061582!2d5.1336397!5e0!3m2!1sen!2sng!4v1740272276505!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <!-- Test Page -->
-    <section id="test-page" class="page hidden">
-        <div class="test-header">
-            <h2>GNS 101</h2>
-            <button id="submit-test" class="submit-btn">Submit</button>
+
         </div>
-        <div class="student-details">
-            <p><strong>Name:</strong> John Doe</p>
-            <p><strong>Matric No:</strong> <span id="user-matric-test"></span></p>
-            <p><strong>Course:</strong> GNS 101</p>
-        </div>
+        
+       <div class="connect-section"> 
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/7D2O3J4hbRuVsfjh1E8cd7?utm_source=generator" width="70%" height="35" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+       </div>
 
-        <div class="question-container">
-            <p><strong>Question:</strong> <span id="question-text">1</span></p>
-            <div id="options"></div>
-        </div>
+    </main>
 
-        <div class="question-navigation">
-            <h3>Questions</h3>
-            <div id="question-icons"></div>
-        </div>
+    <footer>
+        <p>&copy; 2025 CBT System | All Rights Reserved. Powered by <strong>Chapel Youth Fellowship</strong></p>
+    </footer>
 
-        <div class="navigation">
-            <button id="prev" class="prev-btn">Previous</button>
-            <button id="save" class="save-btn">Save</button>
-            <button id="next" class="next-btn">Next</button>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+    <script>
+      let ascentr = 5
+    </script>
 </body>
-
-
-
 </html>
