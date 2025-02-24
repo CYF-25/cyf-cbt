@@ -1,214 +1,221 @@
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: #f4f4f4;
-    text-align: center;
+    font-size: 18px;
+    color: #333;
     margin: 0;
     padding: 0;
-}
-
-#home-page, #instructions-page {
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: white;
     width: 100%;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Forms */
-form {
-    display: flex;
+    background-color: #f4f4f9;
+    display: grid;
     flex-direction: column;
-    width: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-input, button {
-    margin: 10px 0;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
-    cursor: pointer;
-    font-weight: bold;
-}
-
-/* Buttons */
-.prev-btn {
-    background: #d9534f;
-    color: white;
-}
-
-.save-btn {
-    background: #007BFF;
-    color: white;
-}
-
-.next-btn {
-    background: #28a745;
-    color: white;
-}
-
-.submit-btn {
-    background: #ff9800;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-/* Test Page */
-.test-header {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
     align-items: center;
-    margin-bottom: 20px;
+    overflow: scroll;
 }
 
-.student-details {
-    background: #e3f2fd;
-    padding: 10px;
-    width: 80%;
-    border-radius: 5px;
+/* First Layer Styling */
+.firstlayer {
+    background-color: #333;
+    width: 100%;
+    height: 300px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 0 0 45px 45px;
+    text-decoration: underline dotted;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect with Border Radius and Color Change */
+.firstlayer:hover {
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 0 0 40px 40px;
+    text-decoration: none;
+}
+
+/* Animation for Text Fade-In and Slide */
+.firstlayer .flanimate {
+    font-size: 2rem;
+    color: green;
+    animation: slideFadeIn 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Keyframes for Slide and Fade-In Effect */
+@keyframes slideFadeIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#introduction {
+    margin: 50px;
+}
+
+#introduction:hover {
+    color: black;
+}
+
+#resources{
+    margin: 50px;
+}
+
+
+
+#resources ul li a {
+    color: #555;
+    padding-bottom: 20px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#resources ul li a:hover{
+    color: white;
+}
+
+#subscription {
+    color: #000000;
+    line-height: 1.6;
+    max-width: 100%;
+    text-align: none;
+    padding-bottom: 10px;
+    margin: 25px;
+}
+
+#subscription:hover {
+    text-decoration: underline dotted;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subbutton {
+    font-family: 'Arial';
+    font-size: 25px;
+    color: #000000;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.subbutton .cob:hover{
+    color: white;
+    background-color: #555;
+}
+
+.cob {
+    font-family: 'Arial';
+    font-size: 25px;
+    color: #000000;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.cob:hover{
+    color: white;
+    background-color: #555;
+}
+
+
+
+/* Body Text Styling */
+p {
+    color: #555;
+    line-height: 1.6;
+    max-width: 100%;
+    padding: 20px;
     text-align: left;
 }
 
-.question-container {
-    background: white;
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+.connect-section {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
     padding: 20px;
-    width: 80%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.social-icons a {
+    margin: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+iframe {
+    width: 100%;  /* Makes it responsive */
+    height: 300px; /* Adjust height */
+    border: none; /* Removes default border */
+    border-radius: 1px; /* Smooth rounded corners */
+    margin-bottom: 2px; /* Adds space below the iframe */
+    margin-top: 10px;
 }
 
-/* Question Navigation */
-.question-navigation {
-    width: 80%;
-    margin-bottom: 20px;
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    border-width: 10px;
+    padding: 1px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
-#question-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
+footer p {
+    text-align: center;
 }
 
-.question-btn {
-    width: 30px;
-    height: 30px;
-    border: none;
-    background: #ddd;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 50%;
-}
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .firstlayer {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
 
-.question-btn.active {
-    background: #4CAF50;
-    color: white;
-}
-
-.question-btn:hover {
-    background: #007BFF;
-    color: white;
-}
-
-/* Navigation */
-.navigation {
-    display: flex;
-    gap: 10px;
-}
-
-
-/* Login Container */
-form {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease-in-out;
-}
-
-form:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Input Fields */
-input {
-    margin: 12px 0;
-    padding: 14px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    outline: none;
-    transition: 0.1s;
-}
-
-#matric-no:focus {
-    border: 1px solid #4facfe;
-    box-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
-}
-
-#password:focus {
-    border: 1px solid #4facfe;
-    box-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
-}
-
-
-/* Buttons */
-button[type="submit"], #start-test {
-    margin-top: 15px;
-    padding: 14px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-    background: #4facfe;
-    color: white;
-}
-
-button[type="submit"], #start-test:hover {
-    background: #00c6fb;
-}
-
-/* Footer */
-.footer {
-    position: absolute;
-    bottom: 10px;
-    font-size: 14px;
-    color: white;
-}
-
-.footer b {
-    font-weight: bold;
+    nav ul li {
+        margin: 10px 0;
+    }
 }
