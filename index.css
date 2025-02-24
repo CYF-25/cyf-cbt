@@ -15,7 +15,7 @@ body {
 
 /* First Layer Styling */
 .firstlayer {
-    background-color: #333;
+    background-color: #066dc7;
     width: 100%;
     height: 300px;
     color: #ffffff;
@@ -109,9 +109,9 @@ body {
     margin-left: 15px;
 }
 
-.subbutton .cob:hover{
+.subbutton:hover{
     color: white;
-    background-color: #555;
+    background-color: #4facfe;
 }
 
 .cob {
@@ -124,7 +124,7 @@ body {
 
 .cob:hover{
     color: white;
-    background-color: #555;
+    background-color: #4facfe;
 }
 
 
@@ -190,7 +190,7 @@ iframe {
 
 /* Footer Styling */
 footer {
-    background-color: #333;
+    background-color: #066dc7;
     color: #fff;
     width: 100%;
     text-align: center;
@@ -203,6 +203,7 @@ footer {
 
 footer p {
     text-align: center;
+    color: white;
 }
 
 /* Responsive Design for Smaller Screens */
