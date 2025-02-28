@@ -101,39 +101,35 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.subbutton {
+.course, .subbutton {
     font-family: 'Arial';
-    font-size: 25px;
+    font-size: 20px;
     color: #000000;
     text-align: left;
     margin-left: 15px;
-}
-
-.subbutton:hover{
-    color: white;
-    background-color: #4facfe;
-}
-
-.course {
-    font-family: 'Arial';
-    font-size: 25px;
-    color: #000000;
-    text-align: left;
-    margin-left: 15px;
-    display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .course:hover{
     color: white;
     background-color: #4facfe;
     transform: translateY(-5px) translateX(-5px);
-    box-shadow: 0 8px 16px rgb(84, 82, 82);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.subbutton:hover{
+    color: white;
+    background-color: #4facfe;
+}
 
 
 /* Body Text Styling */
